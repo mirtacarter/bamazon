@@ -1,6 +1,7 @@
 // require packages
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+require("console.table");
 
 // create connection to database
 var connection = mysql.createConnection({
@@ -14,7 +15,7 @@ var connection = mysql.createConnection({
   
     // Your password
     password: "root",
-    database: "bamazonDB"
+    database: "bamazon"
   });
 
 
@@ -22,6 +23,7 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
     if (err) throw err;
     // run the start function after the connection is made to prompt the user
+    console.log("Welcome, weary traveler, to my shop. What would you like to purchase?");
     showTable();
   });
 
@@ -29,8 +31,7 @@ connection.connect(function(err) {
 function showTable() {
   connection.query("SELECT * FROM products", function(err, res) {
     if (err) throw err;
-    console.log("Welcome, weary traveler, to my shop. What would you like to purchase?");
-    console.table(res);
+       console.table(res);
 
     // call sale function
     startSale(res);
