@@ -32,7 +32,8 @@ Mock product data was inserted into this database for a number of different prod
 Running the Node application `bamazonCustomer.js` displays all of the items available for sale, including the ids, names, and prices of products for sale. The customer is presented with two prompts:
    * The first asks them the ID of the product they would like to buy.
 
-    ![Alt Text](http://g.recordit.co/XcJAfzRVVi.gif)
+![Alt Text](http://g.recordit.co/XcJAfzRVVi.gif)
+
 
    * The second message asks how many units of the product they would like to buy.
 
