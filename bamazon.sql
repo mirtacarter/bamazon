@@ -14,7 +14,7 @@ CREATE TABLE products(
 SELECT * FROM products;
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Draught of Alteration", "Potions", 106, 12),
+VALUES ("Fur-Lined Boots", "Clothing", 25, 42),
 ("Elixir of Strength", "Potions", 106, 12),
 ("Draught of Alteration", "Potions", 467, 7),
 ("Skirmisher's Philter", "Potions", 96, 36),
